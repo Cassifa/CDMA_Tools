@@ -41,12 +41,13 @@ export default {
 
       const changeneed=(content)=>{
         cnt.value=1;
-        need.value=content;
-        ans.value.splice(0,ans.value.length);
-        let t=need.value;
-        let k=need.value;
+        need.value=content;//获取输入
+        ans.value.splice(0,ans.value.length);//清空答案数组
+        let t=need.value;//当前构造位数
+        let k=need.value;//需要的位数
+        //逻辑：取当前长度为构造格，格内前一半构造1，后半构造0
         while(t){
-            if(k&1)break;
+            if(k&1)break;//输入数据必须为偶数
             let st='';
             let now=1;
             for(let i=0;i<k/t;i++){
@@ -57,10 +58,10 @@ export default {
                 now=!now;
             }
             ans.value.push(st);
-            if(t&1)break;
+            if(t&1)break;//当前最小构造格必须为偶数
             t/=2;
         }
-        copycnt.value=ans.value.length;
+        copycnt.value=ans.value.length;//最大复制数量
       }
 
       const copy=()=>{
