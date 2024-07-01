@@ -14,7 +14,7 @@
 
 输入比特位数后会生成当前位数下的全部两两正交码
 
-![](https://git.acwing.com/Cassifa/img-folder/-/raw/main/CMDA_TOOL/01.png)
+![][01]
 
 - 判断正交
 
@@ -22,21 +22,21 @@
 
     判断模式下，左侧确认个数后用户需要在右侧填入待检测的码片
 
-    ![](https://git.acwing.com/Cassifa/img-folder/-/raw/main/CMDA_TOOL/02.png)
+    ![][02]
 
   - 正交效果
 
-  ![](https://git.acwing.com/Cassifa/img-folder/-/raw/main/CMDA_TOOL/0301.png)
+  ![][0301]
 
-  ![](https://git.acwing.com/Cassifa/img-folder/-/raw/main/CMDA_TOOL/0302.png)
+  ![][0302]
 
   - 不正交效果
 
     数据不正交会为用户显示输入码片两两之间在什么情况下不正交
 
-  ![](https://git.acwing.com/Cassifa/img-folder/-/raw/main/CMDA_TOOL/0401.png)
+  ![][0401]
 
-  ![](https://git.acwing.com/Cassifa/img-folder/-/raw/main/CMDA_TOOL/0402.png)
+  ![][0402]
   
   - 非法输入
   
@@ -73,3 +73,11 @@
       }
 ```
 
+
+
+[01]: ./img/01.png
+[02]: ./img/02.png
+[0301]: ./img/0301.png
+[0302]: ./img/0302.png
+[0401]: ./img/0401.png
+[0402]: ./img/0402.png
